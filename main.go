@@ -18,7 +18,7 @@ func main() {
 	flag.Parse()
 	lines, err := readLines(flag.Arg(0))
 	if err != nil {
-		fmt.Printf("cannot open: %v\n", err)
+		fmt.Printf("%s: %v\n", os.Args[0], err)
 		os.Exit(1)
 	}
 
